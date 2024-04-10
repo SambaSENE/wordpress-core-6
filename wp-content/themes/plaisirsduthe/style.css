@@ -2,11 +2,17 @@
     Theme Name: Les plaisirs du the
 */
 :root {
-    --color-green:  #73af00;
-    --color-brown-light:  #EBE7E3;
-    --color-white:  #fff;
-    --color-grey:  #514F54;
+    --color-green: #73af00;
+    --color-brown-light: #EBE7E3;
+    --color-white: #fff;
+    --color-grey: #514F54;
 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -16,21 +22,162 @@ html {
 body {
     font-size: 1.6rem;
     background-color: var(--color-white);
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+
+    /* width: 100%; */
+    padding: 20px 0 5px;
+    color: var(--color-grey);
+    border-bottom: 3px solid var(--color-green);
+
 }
 
 header {
     width: 100%;
     height: 120px;
 }
+
 header nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-header nav .custom-logo-link {
-    
-    border: 1px solid red;
-}
+
+header nav .custom-logo-link {}
+
 header nav .custom-logo-link .custom-logo {
+    width: 150px;
+    height: 100px;
+    padding: 15px;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.menu li {
+    padding: 10px;
+
+}
+
+.menu li a {
+    text-transform: uppercase;
+}
+
+.menu li a:hover {
+    border-bottom: 2px solid var(--color-green);
+}
+
+/* ____________________________________________ */
+.the-contents {
+    height: 70vh;
+}
+
+.the-contents .post-main {
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.the-contents .post-main .wp-block-group {
+    /* border: 1px solid red; */
+    background-color: var(--color-brown-light);
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+.the-contents .post-main h2 {
+    width: 100%;
+    padding: 20px 0 5px;
+    color: var(--color-grey);
+    border-bottom: 3px solid var(--color-green);
+}
+
+.the-contents .post p {
+    text-align: justify;
+    margin: 15px 0;
+}
+
+/* ____________________GAMME_________________________ */
+.content-gamme {
+    /* height: 70vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.presentation {
+    width: 500px;
+    background-color: var(--color-brown-light);
+    border-radius: 10px;
+    padding: 15px;
+    
+}
+
+.presentation p {
+    margin-top: 20px;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.cards-products {
+    width: 100%;
+}
+.title-gamme {
+    text-align: center;
+    padding: 50px;
+    border: none;
+}
+.all_products .wp-block-group__inner-container  {
+    justify-content: center;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.product {
+    background-color: var(--color-brown-light);
+    width: 500px;
+    border-radius: 8px;
+}
+.all_products .wp-block-group__inner-container p{
+    padding: 15px;
+}
+/* __________________________ */
+.the-contents {
+    width: 100%;
+    height: 80vh;
+}
+.the-contents h1 {
+    text-align: center;
+    
+    padding: 15px 0;
+    
+}
+.wpforms-field-container {
+    border: 1px solid red;
+   
+}
+/* __________________FOOTER___________________ */
+
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: var(--color-green);
+    color: var(--color-brown-light);
 }

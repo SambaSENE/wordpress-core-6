@@ -12,13 +12,12 @@ if( have_posts() ) :
 ?>
         <article class="post full">
             <header>
-                <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2> 
+                <h2><?php the_title(); ?></h2> 
                 
-                <aside>Dans <?php the_category(', ') ?></aside>
+                <p>Dans <?php the_category(', ') ?></p>
             </header>
             <div class="post-content">
-                <?php the_excerpt(); ?> 
-                <a href="<?php the_permalink() ?>">Lire la suite</a>
+                <?php the_content()?>
             </div>
         </article>
 <?php   
